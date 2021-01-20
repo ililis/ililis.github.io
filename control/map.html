@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Map</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=84cea8e6-3f70-4381-91f1-2bade12f9785" type="text/javascript"></script>
+    <script src="https://cdn.plot.ly/plotly-basic-latest.min.js" type="text/javascript"></script>
+	<style>
+        html, body, #map {
+            width: 81%; height: 85%; padding: 0; margin: 0;
+					float: top;
+        }
+		#graphs {
+		float: right;
+    width: 100px; /* Ширина колонки */
+		}
+		#luds {
+		float: left;
+		width: 100px;
+		height: 600px;
+		}
+		#Slevel {
+		float: left;
+		width: 200px;
+		height: 600px;
+		}
+		#Sinr {
+		float: left;
+		width: 200px;
+		}
+		#bs {
+		float: left;
+		width: 200px;
+		}
+		
+    </style>
+</head>
+<body>
+<div id="graphs">
+	<div id=line-chart0></div>
+	<div id=line-chart1></div>
+	<div id=line-chart2></div>
+	<div id=line-chart3></div>
+	<div id=line-chart4></div>
+	<div id=line-chart5></div>
+	<div id=line-chart6></div>
+	<div id=line-chart7></div>
+	<div id=line-chart8></div>
+</div>
+	<div id="map"></div>
+	<script src="mydots.js" type="text/javascript"></script>
+	<!script src="test.js" type="text/javascript"></script>
+
+	<div id="luds">
+	<h3> <br><br></h3>
+	<!-- #if -->
+	<h3>Людь 0</h3>
+	<h3>Людь 1</h3>
+	<h3>Людь 2</h3>
+	<h3>Людь 3</h3>
+	<h3>Людь 4</h3>
+	<h3>Людь 5</h3>
+	<h3>Людь 6</h3>
+	<h3>Людь 7</h3>
+	<h3>Людь 8</h3>
+	<!--#endif -->
+	</div>
+
+	<div id="Slevel"><h3 align="center">Уровень сигнала базовой станции</h3>
+	<h3 align="center"><input type="text" id="dist0"></h3>
+	<h3 align="center"><input type="text" id="dist1"></h3>
+	<h3 align="center"><input type="text" id="dist2"></h3>
+	<h3 align="center"><input type="text" id="dist3"></h3>
+	<h3 align="center"><input type="text" id="dist4"></h3>
+	<h3 align="center"><input type="text" id="dist5"></h3>
+	<h3 align="center"><input type="text" id="dist6"></h3>
+	<h3 align="center"><input type="text" id="dist7"></h3>
+	<h3 align="center"><input type="text" id="dist8"></h3>
+	</div>
+	
+	<div id="Sinr"><h3 align="center"><br>SINR</h3>
+	<h3 align="center"><input type="text" id="sinr0"></h3>
+	<h3 align="center"><input type="text" id="sinr1"></h3>
+	<h3 align="center"><input type="text" id="sinr2"></h3>
+	<h3 align="center"><input type="text" id="sinr3"></h3>
+	<h3 align="center"><input type="text" id="sinr4"></h3>
+	<h3 align="center"><input type="text" id="sinr5"></h3>
+	<h3 align="center"><input type="text" id="sinr6"></h3>
+	<h3 align="center"><input type="text" id="sinr7"></h3>
+	<h3 align="center"><input type="text" id="sinr8"></h3>
+	</div>
+	<div id="bs"><h3 align="center"><br>Базовая станция</h3>
+	<h3 align="center"><input type="text" id="nbs0"></h3>
+	<h3 align="center"><input type="text" id="nbs1"></h3>
+	<h3 align="center"><input type="text" id="nbs2"></h3>
+	<h3 align="center"><input type="text" id="nbs3"></h3>
+	<h3 align="center"><input type="text" id="nbs4"></h3>
+	<h3 align="center"><input type="text" id="nbs5"></h3>
+	<h3 align="center"><input type="text" id="nbs6"></h3>
+	<h3 align="center"><input type="text" id="nbs7"></h3>
+	<h3 align="center"><input type="text" id="nbs8"></h3>
+	</div>
+	
+
+</body>
+</html>
