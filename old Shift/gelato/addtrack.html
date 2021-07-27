@@ -1,0 +1,20 @@
+<div class="addsong">
+	<form action="index.php" method="post" id='addtrackform'>
+		Исполнитель<br>
+		<input class="inputarsong" type="text" id="inputartist" name="inputartist">
+		<br>
+		Название трека<br>
+		<input class="inputarsong" type="text" id="inputsong" name="inputsong">
+		<br>
+		Слова<br>
+		<textarea class="inputarea" id="inputlyrics" cols="50" rows="20" name="inputlyrics"></textarea>
+		<div class="insideform"></div>
+		<br><br>
+		<input class="boxfolder" type="checkbox" id="helpusbox">
+		<label for="helpusbox">Пометить как личное (текст не будет доступен для глобального поиска)</label><br>
+		<div class="submitdiv hoverbutton" onclick="submitTrackAndSend()">OK</div>
+	</form>
+</div>
+
+<!-- <input class="boxfolder" type="checkbox" name="id" value=""> -->
+
