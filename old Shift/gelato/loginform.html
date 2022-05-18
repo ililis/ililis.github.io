@@ -1,0 +1,16 @@
+<div class="loginregblock">
+  <div class="loginonly" id="loginonly">
+    <form action="index.php" method="post" id="registerloginform">
+    <input id="inputmail" class="inputauto" type="text" onkeyup="checkInputKey('inputmail')" placeholder="Введите email" name="registermail" >
+    <input id="inputlogin" class="inputauto" type="text" onkeyup="checkInputKey('inputlogin')" placeholder="Введите логин" name="lgn" >
+    <input id="inputpass" class="inputauto" type="password" onkeyup="checkInputKey('inputpass')" placeholder="Введите пароль" name="psw" >
+    <input id="inputpassagain" class="inputauto" type="password" onkeyup="checkInputKey('inputpassagain')" placeholder="Повторите пароль" name="psw" >
+  </form>
+    <button onclick="submitLogin()" id="submitloginbutton" class="submitloginbutton hoverbutton">Войти</button>
+    <button onclick="submitRegister()" id="submitregisterbutton" class="submitregisterbutton hoverbutton">Зарегистрироваться</button>
+  </div>
+  <div class="buttonreg">
+    <button class="regbutton hoverbutton" onclick="showRegister()">Регистрация</button>
+  </div>
+  <br><h2>Слова всегда под рукой</h2>
+</div>
